@@ -214,12 +214,18 @@ body {
     margin-bottom: 10px;
 }
 
+.bot-logo:hover {
+    transform: scale(1.1); /* Zooms in 10% when you hover */
+}
+
 /* This controls the size of your screenshot within the frame */
 .bot-logo {
-    max-width: 100%;
-    max-height: 100px; /* Adjust this height to fit your card size */
-    object-fit: contain;
-    border-radius: 8px; /* Smooths the edges of your screenshot */
+    width: 90%;          /* Forces it to take up most of the width */
+    height: 140px;       /* Increased height to fill the frame better */
+    object-fit: cover;   /* OR 'contain' if you don't want any part of the image cropped */
+    border-radius: 8px;
+    display: block;      /* Ensures it behaves well with the flex container */
+    transition: transform 0.3s ease; /* Bonus: makes it feel interactive */
 }
 
 .frame-btn {
@@ -302,5 +308,6 @@ body.dark-mode .frame-btn:hover { color: #1e272e; }
     .project-row { flex-direction: column; }
     .fixed-bottom-left { bottom: 20px; left: 20px; }
 }
+
 
 
