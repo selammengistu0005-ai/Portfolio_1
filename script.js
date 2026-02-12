@@ -48,12 +48,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start typing after a small delay (500ms) for better UX
     setTimeout(typeEffect, 500);
 });
-
-// 5. INTERACTIVE BUTTONS (Optional/Future Proofing)
-// This listens for any "Launch Demo" clicks to show you're ready to scale
-const frameButtons = document.querySelectorAll('.frame-btn');
-frameButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        console.log("Agent Demo requested: This is where you would link your live bots!");
-    });
-});
