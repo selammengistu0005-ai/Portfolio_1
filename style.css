@@ -206,6 +206,22 @@ body {
 .medium { width: 60%; }
 .long { width: 85%; }
 
+.bot-logo-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* This controls the size of your screenshot within the frame */
+.bot-logo {
+    max-width: 100%;
+    max-height: 100px; /* Adjust this height to fit your card size */
+    object-fit: contain;
+    border-radius: 8px; /* Smooths the edges of your screenshot */
+}
+
 .frame-btn {
     display: inline-block;
     text-decoration: none;
@@ -286,4 +302,5 @@ body.dark-mode .frame-btn:hover { color: #1e272e; }
     .project-row { flex-direction: column; }
     .fixed-bottom-left { bottom: 20px; left: 20px; }
 }
+
 
