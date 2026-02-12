@@ -134,14 +134,14 @@ body {
 }
 
 .project-row {
-    display: flex;
+    display: grid;
     gap: 30px;
     margin-bottom: 30px;
     flex-wrap: wrap; /* Responsive wrap for mobile */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .project-frame {
-    flex: 1;
     min-width: 280px; /* Prevents squishing on mobile */
     min-height: 220px;
     background: var(--card-bg);
@@ -313,6 +313,7 @@ body.dark-mode .frame-btn:hover { color: #1e272e; }
     .project-row { flex-direction: column; }
     .fixed-bottom-left { bottom: 20px; left: 20px; }
 }
+
 
 
 
