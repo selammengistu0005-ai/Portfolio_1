@@ -186,7 +186,7 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .skeleton-chat {
@@ -207,11 +207,13 @@ body {
 .long { width: 85%; }
 
 .bot-logo-container {
-    flex-grow: 1;
-    display: flex;
+    height: 140px;       /* Keep your height - it's a good size */
+    display: flex;       /* Keep this to center the logo */
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Keep this to create a gap for the button */
+    width: 100%;         /* Add this to ensure it spans the card width */
+    overflow: hidden;    /* Add this as a safety net so images don't leak out */
 }
 
 .bot-logo:hover {
@@ -220,12 +222,9 @@ body {
 
 /* This controls the size of your screenshot within the frame */
 .bot-logo {
-    width: 90%;          /* Forces it to take up most of the width */
-    height: 140px;       /* Increased height to fill the frame better */
-    object-fit: cover;   /* OR 'contain' if you don't want any part of the image cropped */
-    border-radius: 8px;
-    display: block;      /* Ensures it behaves well with the flex container */
-    transition: transform 0.3s ease; /* Bonus: makes it feel interactive */
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
 }
 
 .frame-btn {
@@ -308,6 +307,7 @@ body.dark-mode .frame-btn:hover { color: #1e272e; }
     .project-row { flex-direction: column; }
     .fixed-bottom-left { bottom: 20px; left: 20px; }
 }
+
 
 
 
