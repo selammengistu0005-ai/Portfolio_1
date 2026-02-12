@@ -207,6 +207,8 @@ body {
 .long { width: 85%; }
 
 .frame-btn {
+    display: inline-block;
+    text-decoration: none;
     align-self: flex-start;
     margin-top: 20px;
     background: none;
@@ -284,3 +286,4 @@ body.dark-mode .frame-btn:hover { color: #1e272e; }
     .project-row { flex-direction: column; }
     .fixed-bottom-left { bottom: 20px; left: 20px; }
 }
+
