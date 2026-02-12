@@ -22,22 +22,22 @@ themeToggle.addEventListener('click', () => {
 });
 
 // 3. TYPING EFFECT LOGIC
-const introText = "Hello, I'm Selam Mengistu.";
+const introText = "Hello, I'm Selam Mengistu.\nI build AI agents for websites."; 
 let index = 0;
 
 function typeEffect() {
     if (index < introText.length) {
-        // Append one character at a time
-        typingElement.textContent += introText.charAt(index);
-        index++;
+        // NEW LOGIC: If the character is \n, add a line break tag
+        if (introText.charAt(index) === "\n") {
+            typingElement.innerHTML += "<br>"; 
+        } else {
+            // Use innerHTML instead of textContent
+            typingElement.innerHTML += introText.charAt(index);
+        }
         
-        // Randomize typing speed slightly (70ms to 120ms) 
-        // to make it look like a real chatbot agent is responding
+        index++;
         const randomSpeed = Math.floor(Math.random() * 50) + 70;
         setTimeout(typeEffect, randomSpeed);
-    } else {
-        // Once finished, we keep the blinking cursor 
-        // (Handled via CSS animation on the #typing-text ID)
     }
 }
 
@@ -48,3 +48,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start typing after a small delay (500ms) for better UX
     setTimeout(typeEffect, 500);
 });
+
