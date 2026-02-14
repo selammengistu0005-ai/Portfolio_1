@@ -4,7 +4,6 @@ const body = document.body;
 const typingElement = document.getElementById('typing-text');
 
 // 2. THEME TOGGLE LOGIC
-// This function checks for a saved theme in the browser's memory
 const initializeTheme = () => {
     const savedTheme = localStorage.getItem('selam-portfolio-theme');
     if (savedTheme === 'dark') {
@@ -13,10 +12,7 @@ const initializeTheme = () => {
 };
 
 themeToggle.addEventListener('click', () => {
-    // Toggle the class on the body
     body.classList.toggle('dark-mode');
-    
-    // Save the preference so it persists on refresh
     const isDark = body.classList.contains('dark-mode');
     localStorage.setItem('selam-portfolio-theme', isDark ? 'dark' : 'light');
 });
@@ -27,11 +23,9 @@ let index = 0;
 
 function typeEffect() {
     if (index < introText.length) {
-        // NEW LOGIC: If the character is \n, add a line break tag
         if (introText.charAt(index) === "\n") {
             typingElement.innerHTML += "<br>"; 
         } else {
-            // Use innerHTML instead of textContent
             typingElement.innerHTML += introText.charAt(index);
         }
         
@@ -41,11 +35,33 @@ function typeEffect() {
     }
 }
 
-// 4. BOOTSTRAP THE PAGE
+// 4. NEW: CASE STUDY TOGGLE LOGIC
+// This finds all "Read Case Study" buttons and makes them functional
+function initCaseStudies() {
+    const caseButtons = document.querySelectorAll('.toggle-case-study');
+    
+    caseButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const caseStudyContent = button.nextElementSibling;
+            
+            // Toggle the 'active' class to slide open/closed
+            caseStudyContent.classList.toggle('active');
+            
+            // Update button text based on state
+            if (caseStudyContent.classList.contains('active')) {
+                button.textContent = "Close Case Study";
+            } else {
+                button.textContent = "Read Case Study";
+            }
+        });
+    });
+}
+
+// 5. BOOTSTRAP THE PAGE
 document.addEventListener('DOMContentLoaded', () => {
     initializeTheme();
+    initCaseStudies(); // Initialize the new feature
     
     // Start typing after a small delay (500ms) for better UX
     setTimeout(typeEffect, 500);
 });
-
