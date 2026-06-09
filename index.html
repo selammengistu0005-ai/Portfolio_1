@@ -3,98 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selam Mengistu | Chatbot Designer</title>
-    <script src="https://selammengistu0005-ai.github.io/selam_widget/my_widget.js" defer></script>
+    <title>Selam Mengistu | AI Agent Designer</title>
+    <script src="customer_support.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- ===================== BACKGROUND LAYERS ===================== -->
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-glow-radial"></div>
+
+    <!-- ===================== HERO SECTION ===================== -->
     <header class="hero">
+
         <div class="profile-container">
-            <img src="https://raw.githubusercontent.com/selammengistu0005-ai/my_photo/main/photo_2026-02-11_15-41-50.jpg" alt="Selam Mengistu" class="profile-img">
+            <div class="profile-glow-ring"></div>
+            <img
+                src="https://raw.githubusercontent.com/selammengistu0005-ai/my_photo/main/photo_2026-02-11_15-41-50.jpg"
+                alt="Selam Mengistu"
+                class="profile-img"
+            >
             <span class="status-dot"></span>
         </div>
-        
-        <div class="chat-wrapper">
-            <div class="chat-bubble">
-                <h1 id="typing-text"></h1>
+
+        <div class="hero-card">
+            <div class="hero-card-inner">
+                <div class="chat-bubble">
+                    <h1 id="typing-text"></h1>
+                </div>
+                <p class="subtitle">Website Designer &amp; Developer</p>
+
             </div>
-            <p class="subtitle">Website Chatbot Agent Designer</p>
         </div>
-        
-        <div class="cta-chips">
-            <button class="chip">View My Agents</button>
-        </div>
+
     </header>
 
+    <!-- ===================== PROJECT GALLERY ===================== -->
     <main class="project-gallery">
-        <h2 class="section-title">Deployment History & Case Studies</h2>
-        
+
+        <div class="section-label-row">
+            <span class="section-eyebrow">Portfolio</span>
+            <h2 class="section-title">Selected Client Deployments &amp; Websites</h2>
+            <p class="section-sub">Real-world Websites built and deployed across industries.</p>
+        </div>
+
         <div class="project-grid">
-            
-            <div class="project-frame">
+
+            <!-- CARD 01 — Power Gym -->
+            <div class="project-frame theme-gold">
                 <div class="frame-header">
-                    <div class="dots"><span class="red"></span><span class="yellow"></span><span class="green"></span></div>
-                    <div class="bot-name">SHOPIO.</div>
-                    <a href="https://websiteselamm.gt.tc/" target="_blank" class="frame-btn">View</a>
+                    <div class="dots">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+                    <div class="bot-name">powergym</div>
+                    <a href="https://selammengistu0005-ai.github.io/Power_fitness/" target="_blank" class="frame-btn">View</a>
                 </div>
                 <div class="frame-content">
-                    <div class="bot-logo-container">
-                        <img src="https://raw.githubusercontent.com/selammengistu0005-ai/Shopio_items/main/Shopio_logo.png" alt="SHOPIO Logo" class="bot-logo">
+                    <div class="card-icon-area">
+                        <span class="card-icon">💪</span>
+                        <div class="card-glow card-glow--gold"></div>
                     </div>
-                    
-                    <button class="toggle-case-study">Read Case Study</button>
+                    <div class="card-info">
+                        <h3 class="card-title">Power Gym</h3>
+                        <span class="card-category">GYM &bull; FITNESS</span>
+                    </div>
+                    <button class="toggle-case-study">View Case Study</button>
                     <div class="case-study">
-                        <p class="problem"><strong>Problem:</strong> E-commerce store was losing sales due to slow response times on shipping FAQs.</p>
-                        <p class="solution"><strong>Solution:</strong> Deployed a 24/7 RAG-based support agent to instantly resolve tracking inquiries and recommend products.</p>
+                        <p class="problem"><strong>Problem:</strong> Gym members had no 24/7 way to book sessions, ask about programs, or get nutrition advice outside staff hours.</p>
+                        <p class="solution"><strong>Solution:</strong> Deployed a conversational AI agent handling bookings, FAQ, and personalised program recommendations around the clock.</p>
                     </div>
-
                 </div>
             </div>
 
-            <div class="project-frame">
+            <!-- CARD 02 — Dawit Personal Trainer -->
+            <div class="project-frame theme-red">
                 <div class="frame-header">
-                    <div class="dots"><span class="red"></span><span class="yellow"></span><span class="green"></span></div>
-                    <div class="bot-name">Tres_Academy</div>
-                    <a href="http://tres.great-site.net/" target="_blank" class="frame-btn">View</a>
+                    <div class="dots">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+                    <div class="bot-name">dawitpt</div>
+                    <a href="https://selammengistu0005-ai.github.io/dawitGYM/" target="_blank" class="frame-btn">View</a>
                 </div>
                 <div class="frame-content">
-                    <div class="bot-logo-container">
-                        <img src="https://raw.githubusercontent.com/selammengistu0005-ai/my_photo/main/Tres_acadamy.png" alt="TRES Logo" class="bot-logo">
+                    <div class="card-icon-area">
+                        <span class="card-icon">🏋️</span>
+                        <div class="card-glow card-glow--red"></div>
                     </div>
-
-                    <button class="toggle-case-study">Read Case Study</button>
+                    <div class="card-info">
+                        <h3 class="card-title">Dawit Personal Trainer</h3>
+                        <span class="card-category">FITNESS &bull; PERSONAL TRAINING</span>
+                    </div>
+                    <button class="toggle-case-study">View Case Study</button>
                     <div class="case-study">
-                        <p class="problem"><strong>Problem:</strong> Students struggled to navigate the course catalog and find enrollment deadlines.</p>
-                        <p class="solution"><strong>Solution:</strong> Built an educational assistant bot that guides students through onboarding and answers curriculum questions instantly.</p>
+                        <p class="problem"><strong>Problem:</strong> A solo personal trainer was spending hours answering repetitive client questions about scheduling and workout plans.</p>
+                        <p class="solution"><strong>Solution:</strong> Built a custom AI assistant that handles client intake, scheduling Q&amp;A, and delivers personalised workout guidance automatically.</p>
                     </div>
-
                 </div>
             </div>
 
-            <div class="project-frame">
+            <!-- CARD 03 — Smile Dental (SAMPLE) -->
+            <div class="project-frame theme-medical">
+                <div class="sample-badge">SAMPLE</div>
                 <div class="frame-header">
-                    <div class="dots"><span class="red"></span><span class="yellow"></span><span class="green"></span></div>
-                    <div class="bot-name">Vilto</div>
-                    <a href="https://vilto.gt.tc/" target="_blank" class="frame-btn">View</a>
+                    <div class="dots">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+                    <div class="bot-name">smile_dental</div>
+                    <a href="https://selammengistu0005-ai.github.io/smile_dental/" target="_blank" class="frame-btn">View</a>
                 </div>
                 <div class="frame-content">
-                    <div class="bot-logo-container">
-                        <img src="https://raw.githubusercontent.com/selammengistu0005-ai/my_photo/main/Screenshot%202026-02-12%20182342.png" alt="VILTO Logo" class="bot-logo">
+                    <div class="card-icon-area">
+                        <span class="card-icon">🦷</span>
+                        <div class="card-glow card-glow--blue"></div>
                     </div>
-
-                    <button class="toggle-case-study">Read Case Study</button>
+                    <div class="card-info">
+                        <h3 class="card-title">Smile Dental</h3>
+                        <span class="card-category">HEALTH &bull; DENTAL</span>
+                    </div>
+                    <button class="toggle-case-study">View Case Study</button>
                     <div class="case-study">
-                        <p class="problem"><strong>Problem:</strong> Human support team was overwhelmed by basic troubleshooting tickets.</p>
-                        <p class="solution"><strong>Solution:</strong> Integrated an AI agent capable of triaging requests, solving tier-1 issues, and escalating complex tickets seamlessly.</p>
+                        <p class="problem"><strong>Problem:</strong> Patients frequently called to ask about appointment availability, treatment costs, and aftercare instructions.</p>
+                        <p class="solution"><strong>Solution:</strong> Deployed a dental-specific AI agent that handles appointment pre-screening, cost queries, and post-treatment guidance.</p>
                     </div>
-
                 </div>
             </div>
+
+            <!-- CARD 04 — Tori Speciality (SAMPLE) -->
+            <div class="project-frame theme-teal">
+                <div class="sample-badge">SAMPLE</div>
+                <div class="frame-header">
+                    <div class="dots">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+                    <div class="bot-name">Tori_speciality</div>
+                    <a href="https://selammengistu0005-ai.github.io/Tori_speciality/" target="_blank" class="frame-btn">View</a>
+                </div>
+                <div class="frame-content">
+                    <div class="card-icon-area">
+                        <span class="card-icon">🏥</span>
+                        <div class="card-glow card-glow--teal"></div>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">Tori Speciality</h3>
+                        <span class="card-category">HEALTH &bull; SPECIALITY CLINIC</span>
+                    </div>
+                    <button class="toggle-case-study">View Case Study</button>
+                    <div class="case-study">
+                        <p class="problem"><strong>Problem:</strong> Specialist clinic staff were overwhelmed with patient intake forms and initial triage questions before appointments.</p>
+                        <p class="solution"><strong>Solution:</strong> Built an intake automation agent that pre-screens patients, collects symptom data, and routes them to the right specialist.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 05 — CareDent -->
+            <div class="project-frame theme-blue">
+                <div class="frame-header">
+                    <div class="dots">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+                    <div class="bot-name">care_dent</div>
+                    <a href="https://selammengistu0005-ai.github.io/care_dental_clinic/" target="_blank" class="frame-btn">View</a>
+                </div>
+                <div class="frame-content">
+                    <div class="card-icon-area">
+                        <span class="card-icon">🦷</span>
+                        <div class="card-glow card-glow--blue"></div>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">CareDent</h3>
+                        <span class="card-category">DENTAL CLINIC</span>
+                    </div>
+                    <button class="toggle-case-study">View Case Study</button>
+                    <div class="case-study">
+                        <p class="problem"><strong>Problem:</strong> Dental clinic was losing new patient leads due to delayed responses to online enquiries outside business hours.</p>
+                        <p class="solution"><strong>Solution:</strong> Integrated a lead-capture AI agent on the clinic website that qualifies leads, books consultations, and sends confirmations 24/7.</p>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </main>
 
+    <!-- ===================== THEME TOGGLE ===================== -->
     <div class="fixed-bottom-left">
         <button id="theme-toggle" class="fancy-toggle" aria-label="Switch Theme">
             <span class="sun">☀️</span>
@@ -106,4 +208,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
