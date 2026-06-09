@@ -32,7 +32,7 @@ themeToggle.addEventListener('click', () => {
 // ============================================================
 const introLines = [
     "Hello, I'm Selam Mengistu.",
-    "I build AI agents for websites."
+    "I build websites."
 ];
 
 let lineIndex  = 0;
