@@ -93,15 +93,14 @@ const PROJECT_DATA = {
             { src: 'https://res.cloudinary.com/dhoymhers/image/upload/q_auto/f_auto/v1782100640/bf4f6c0f-d68a-48a3-a760-a54494bfbcca.png', label: 'Power Gym' }
         ],
         problems: [
-            { icon: '⚠️', title: 'No 24/7 Support', points: ['Members got no answers after hours', 'Front desk overwhelmed at peak times'] },
+            { icon: '⚠️', title: 'No website ( No-lead )', points: ["They didn't have any engagement with their members", 'Front desk overwhelmed at peak times'] },
             { icon: '📅', title: 'Missed Bookings', points: ['Class slots went unfilled', 'Staff unavailable to confirm spots'] },
             { icon: '📉', title: 'Low Engagement', points: ['Generic mass messages only', 'No personalised follow-up'] }
         ],
         solutions: [
-            { icon: '🤖', title: 'AI Agent Deployment', points: ['Handles inquiries 24/7', 'Cuts staff workload significantly'] },
-            { icon: '⚡', title: 'Instant Responses', points: ['FAQ automated in real time', 'Class & pricing info on demand'] },
-            { icon: '🎯', title: 'Personalised Plans', points: ['Goal-based program matching', 'Nutrition tips per member'] },
-            { icon: '📈', title: 'Automated Follow-Ups', points: ['Re-engages inactive members', 'Boosts repeat bookings'] }
+            { icon: '🤖', title: 'Professional website', points: ['High brand recongition'] },
+            { icon: '⚡', title: 'Instant bookings', points: ['FAQ automated in real time', 'Class & pricing info on demand'] },
+            { icon: '🎯', title: 'Personalised Plans', points: ['Goal-based program matching', 'Nutrition tips per member'] }
         ],
         metrics: [
             { value: 41, suffix: '%', label: 'More Bookings', detail: 'Class bookings rose after launch' },
@@ -110,7 +109,7 @@ const PROJECT_DATA = {
             { value: 4.8, suffix: '/5', label: 'Member Rating', detail: 'Average satisfaction score' }
         ],
         beforeAfter: { before: 'Manual booking calls, slow replies, missed leads after hours.', after: 'Instant 24/7 booking, FAQ & nutrition guidance, zero missed leads.' },
-        testimonial: { quote: 'Members get answers instantly now, even late at night. No-shows dropped fast.', name: 'Gym Operations Lead' },
+        testimonial: { quote: 'Members get answers instantly now. No-shows dropped fast.', name: 'Gym Operations Lead' },
         stack: ['Conversational AI', 'Booking API', 'Webhook Automation', 'GitHub Pages'],
         timeline: [{ label: 'Discovery', day: 'Day 1' }, { label: 'Design', day: 'Day 2-3' }, { label: 'Build', day: 'Day 4-5' }, { label: 'Deploy', day: 'Day 6' }],
         progress: 100,
@@ -127,13 +126,12 @@ const PROJECT_DATA = {
             { src: 'https://res.cloudinary.com/dhoymhers/image/upload/q_auto/f_auto/v1782101426/67ea8bdc-fbd4-4187-a0af-56821b62a68d.png', label: 'Dawit PT' }
         ],
         problems: [
-            { icon: '⏰', title: 'Hours Lost Daily', points: ['Repetitive scheduling questions', 'No time left for actual coaching'] },
+            { icon: '⏰', title: "Hours Lost Daily because he didn't have a website", points: ['Repetitive scheduling questions', 'No time left for actual coaching'] },
             { icon: '📵', title: 'Missed Messages', points: ['Client texts piled up overnight', 'Slow replies hurt trust'] },
             { icon: '📝', title: 'Manual Intake', points: ['New clients filled paper forms', 'Onboarding felt outdated'] }
         ],
         solutions: [
-            { icon: '🤖', title: 'Automated Intake', points: ['New clients self-onboard instantly', 'Goals captured automatically'] },
-            { icon: '💬', title: '24/7 Q&A', points: ['Scheduling questions answered live', 'No more backlog of messages'] },
+            { icon: '🤖', title: 'Professionlism', points: ['New clients can now see what he has done before', 'see all teh testimonials and the feedbacks'] },
             { icon: '🏋️', title: 'Workout Guidance', points: ['Personalised plans delivered automatically', 'Trainer time freed for real coaching'] }
         ],
         metrics: [
@@ -163,13 +161,12 @@ const PROJECT_DATA = {
         ],
         problems: [
             { icon: '📞', title: 'Phone Overload', points: ['Reception flooded with availability calls', 'Hold times frustrated patients'] },
-            { icon: '💸', title: 'Cost Confusion', points: ['Patients unsure of treatment pricing', 'Repeated calls just to ask cost'] },
-            { icon: '🩹', title: 'Aftercare Gaps', points: ['Patients forgot post-treatment instructions', 'Avoidable follow-up calls'] }
+            { icon: '💸', title: 'Cost Confusion and education', points: ['Patients unsure of treatment pricing', 'Repeated calls just to ask cost'] },
+            { icon: '🩹', title: 'Aftercare Gaps', points: ['Patients forgot post-treatment instructions'] }
         ],
         solutions: [
-            { icon: '🤖', title: 'AI Front Desk', points: ['Pre-screens appointment requests', 'Frees staff for in-chair care'] },
-            { icon: '💬', title: 'Instant Cost Answers', points: ['Treatment pricing on demand', 'Fewer interrupting phone calls'] },
-            { icon: '📋', title: 'Aftercare Automation', points: ['Sends care instructions automatically', 'Cuts avoidable follow-ups'] }
+            { icon: '🤖', title: 'Professional UI design', points: ['Pre-screens appointment requests'] },
+            { icon: '💬', title: 'Instant Cost Answers', points: ['Treatment pricing on demand', 'Fewer interrupting phone calls'] }
         ],
         metrics: [
             { value: 47, suffix: '%', label: 'Fewer Calls', detail: 'Routine calls deflected to chat' },
@@ -199,13 +196,11 @@ const PROJECT_DATA = {
         ],
         problems: [
             { icon: '📝', title: 'Manual Triage', points: ['Staff manually sorted intake forms', 'Slowed time-to-appointment'] },
-            { icon: '🩺', title: 'Incomplete Symptom Data', points: ['Patients under-reported symptoms', 'Specialists lacked context upfront'] },
-            { icon: '🔀', title: 'Routing Errors', points: ['Patients sent to the wrong specialist', 'Wasted first-visit time'] }
+            { icon: '🩺', title: 'Incomplete Symptom Data', points: ['Patients under-reported symptoms', 'Specialists lacked context upfront'] }
         ],
         solutions: [
-            { icon: '🤖', title: 'Automated Pre-Screening', points: ['Captures symptoms before the visit', 'Speeds up appointment readiness'] },
-            { icon: '🩺', title: 'Structured Symptom Intake', points: ['Consistent data for every patient', 'Specialists arrive better informed'] },
-            { icon: '🎯', title: 'Smart Routing', points: ['Matches patients to the right specialist', 'Cuts mis-routed first visits'] }
+            { icon: '🤖', title: 'Automated Pre-Screening', points: ['Captures symptoms before the visit and saves it in a dashboard', 'Speeds up appointment readiness'] },
+            { icon: '🩺', title: 'Structured Symptom Intake', points: ['Consistent data for every patient', 'Specialists arrive better informed'] }
         ],
         metrics: [
             { value: 39, suffix: '%', label: 'Faster Intake', detail: 'Time-to-appointment reduced' },
@@ -235,7 +230,7 @@ const PROJECT_DATA = {
             { src: 'https://res.cloudinary.com/dhoymhers/image/upload/q_auto/f_auto/v1782103082/f54d19e8-9b89-4f09-bb59-c7e70a5e2b2b.png', label: 'CareDent' }
         ],
         problems: [
-            { icon: '🌙', title: 'After-Hours Leads Lost', points: ['Enquiries arrived outside business hours', 'No one to respond in time'] },
+            { icon: '🌙', title: 'No internet prescence', points: ['Enquiries arrived outside business hours', 'No one to respond in time'] },
             { icon: '⏳', title: 'Slow Follow-Up', points: ['Leads waited days for a reply', 'Many never converted'] },
             { icon: '📭', title: 'No Confirmations', points: ['Bookings lacked automatic confirmation', 'Patients unsure if it went through'] }
         ],
@@ -267,18 +262,33 @@ function ccGalleryTile(item, isMain) {
     const inner = item.src
         ? `<img src="${item.src}" alt="${item.label}">`
         : `<span class="cc-gallery-icon">${item.icon}</span><span class="cc-gallery-label">${item.label}</span>`;
-    return `<div class="cc-gallery-tile${isMain ? ' cc-gallery-main' : ''}">${inner}</div>`;
+    return `<div class="cc-gallery-tile${isMain ? ' cc-gallery-main' : ''}" data-src="${item.src || ''}">${inner}</div>`;
 }
 
 function buildGalleryHTML(gallery) {
     const [main, ...rest] = gallery;
-    return `
+    const html = `
         <div class="cc-gallery">
             ${ccGalleryTile(main, true)}
             <div class="cc-gallery-thumbs">
                 ${rest.map(item => ccGalleryTile(item, false)).join('')}
             </div>
         </div>`;
+
+    setTimeout(() => {
+        const mainTile = document.querySelector('.cc-gallery-main');
+        const thumbs   = document.querySelectorAll('.cc-gallery-thumbs .cc-gallery-tile');
+        thumbs.forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                const newSrc = thumb.dataset.src;
+                if (!newSrc || !mainTile) return;
+                mainTile.innerHTML = `<img src="${newSrc}" alt="preview">`;
+                mainTile.dataset.src = newSrc;
+            });
+        });
+    }, 0);
+
+    return html;
 }
 
 function buildCardGrid(items, variant) {
